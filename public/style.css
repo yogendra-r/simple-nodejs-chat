@@ -386,6 +386,7 @@ button:focus {
 
 .me {
   justify-content: flex-end;
+  
 }
 
 .me .message_box {
@@ -402,17 +403,24 @@ button:focus {
 }
 
 .message_name {
-  color: #1ecdc5;
+  color: #c37748;
   font-size: 0.875rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
 }
-
+.me .message_name{
+  /* color:  #c37748; */
+  color :  #1ecdc5;
+}
 .message_text {
   color: rgb(31, 41, 55);
+  
   font-size: 0.875rem;
 }
-
+.typing .message_text{
+  color:grey;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .announcement {
   background-color: #fbeee6;
   margin: 20px 0;
@@ -428,8 +436,8 @@ button:focus {
 }
 
 .active_item {
-  background-color: #f4f6fb;
-  background-color: rgba(245, 250, 255, 1);
+  background-color: #fbeee6;
+  /* background-color: rgba(245, 250, 255, 1); */
   padding: 0.75rem;
 }
 
@@ -458,6 +466,8 @@ button:focus {
   border-bottom: 1px solid #d3d6e2;
 }
 
+
+
 .room_add_icon_holder {
   display: flex;
   justify-content: center;
@@ -475,4 +485,12 @@ button:focus {
   background-color: red;
   margin: 0;
   padding: 0;
+}
+
+
+.delete_chatroom_btn{
+  font-size: small; 
+}
+.delete_chatroom_btn:hover{
+  font-size:large;
 }
